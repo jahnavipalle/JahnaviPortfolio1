@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 10px;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        header button:hover {
+            background-color: #e55d00;
+        }
+
+        /* Main Section */
+        main {
+            padding: 20px;
+        }
+
+        /* About Section */
+        #about {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 15px;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills ol {
+            text-align: left;
+            display: inline-block;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #projects table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        #projects th, #projects td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #projects th {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            text-align: left;
+            display: inline-block;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-top: 15px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #e55d00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Portfolio</h1>
+        <a href="#about"><button>About</button></a>
+        <a href="#skills"><button>Skills</button></a>
+        <a href="#projects"><button>Projects</button></a>
+        <a href="#contact"><button>Contact</button></a>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>I am PALLE JAHNAVI</h1>
+            <img src="My Img.jpeg" alt="A photo of me">
+            <p>I am a passionate web developer with a focus on front-end technologies.</p>
+            <p>I am currently pursuing my B.Tech at <em>Ravindra College of Engineering for Women</em>.</p>
+            <p>I have learned Web Development.</p>
+            <p>You can <strong>click here</strong> to check out what I have learned in HTML and CSS.</p>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <ol>
+                <li>C (Basics)</li>
+                <li>Python</li>
+                <li>Java (Basics)</li>
+                <li>HTML</li>
+                <li>CSS (Basics)</li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I have built a portfolio website using HTML and CSS.</td>
+                </tr>
+                <tr>
+                    <td>Python Simple Calculator</td>
+                    <td>I have built a simple calculator using Python.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to get in touch with me using the form below:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <b>Choose Your Gender:</b>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <br><b>Select your interests:</b>
+                <input type="checkbox" id="coding" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="reading" value="reading">
+                <label for="reading">Reading</label>
+
+                <label for="bio">Bio (up to 200 characters):</label>
+                <textarea id="bio"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
